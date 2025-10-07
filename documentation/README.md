@@ -6,6 +6,12 @@
 ## Project Overview
 Comprehensive data breach analysis system with ETL pipeline, statistical analysis, and visualization capabilities. Analyzes 35,378 breach incidents from Privacy Rights Clearinghouse (2003-2025) using advanced statistical methods.
 
+## Architecture
+
+![Data Breach Pipeline Architecture](Data%20Breach%20Architecture%20Diagram.png)
+
+The pipeline follows a four-stage process: data sourcing, cleaning, loading, and analysis with outputs to database, visualizations, and future dashboard/modeling capabilities.
+
 ## Project Structure
 DataBreach/
 ├── dataclean.py              # Data cleaning module
