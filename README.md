@@ -1,16 +1,40 @@
-Assignment 4: Database Design & ETL Pipeline
-Student: T. Spivey
-Course: BUS 761
-Date: October 7, 2025
+# Assignment 4: Database Design & ETL Pipeline
+**Student:** T. Spivey  
+**Course:** BUS 761  
+**Date:** October 7, 2025
 
-Project Overview
+## Project Overview
 Comprehensive data breach analysis system with ETL pipeline, statistical analysis, and visualization capabilities. Analyzes 35,378 breach incidents from Privacy Rights Clearinghouse (2003-2025) using advanced statistical methods.
 
-Project Structure
-DataBreach/ ├── dataclean.py # Data cleaning module ├── dataload.py # Database loading functions ├── eda.py # Exploratory data analysis (15 statistical tests) ├── visualizations.py # Data visualization module (6 charts) ├── run_all.py # Main pipeline execution script ├── CIK_NAME_TICKER_EXCHANGE.csv # SEC company reference data ├── documentation/ # Complete project documentation │ ├── cleaning.md # Data cleaning process │ ├── loading.md # Database loading documentation │ ├── sources.md # Data source information │ ├── eda.md # Statistical analysis documentation │ ├── ERD.md # Database schema and ERD │ ├── data_dictionary.md # Complete data dictionary │ └── setup_instructions.md # Setup and usage guide └── output/ └── visualizations/ # 6 business-focused charts (PNG)
+## Architecture
 
-Quick Start
-Prerequisites
+![Data Breach Pipeline Architecture](architecture-diagram.png)
+
+The pipeline follows a four-stage process: data sourcing, cleaning, loading, and analysis with outputs to database, visualizations, and future dashboard/modeling capabilities.
+
+## Project Structure
+DataBreach/
+├── dataclean.py              # Data cleaning module
+├── dataload.py               # Database loading functions
+├── eda.py                    # Exploratory data analysis (15 statistical tests)
+├── visualizations.py         # Data visualization module (6 charts)
+├── run_all.py               # Main pipeline execution script
+├── CIK_NAME_TICKER_EXCHANGE.csv  # SEC company reference data
+├── documentation/           # Complete project documentation
+│   ├── cleaning.md          # Data cleaning process
+│   ├── loading.md           # Database loading documentation
+│   ├── sources.md           # Data source information
+│   ├── eda.md              # Statistical analysis documentation
+│   ├── ERD.md              # Database schema and ERD
+│   ├── data_dictionary.md  # Complete data dictionary
+│   └── setup_instructions.md # Setup and usage guide
+└── output/
+└── visualizations/      # 6 business-focused charts (PNG)
+
+## Quick Start
+
+### Prerequisites
+```bash
 pip install pandas openpyxl scipy scikit-learn matplotlib seaborn
 Run Complete Pipeline
 bashpython run_all.py
