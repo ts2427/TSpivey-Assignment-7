@@ -1,0 +1,29 @@
+# Assignment 5: EDA Module Requirements
+# Python 3.8 or higher required
+
+# Core Data Analysis
+pandas>=1.5.0
+numpy>=1.24.0
+
+# Statistical Analysis
+scipy>=1.10.0
+statsmodels>=0.14.0
+scikit-learn>=1.2.0
+
+# Data Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Database
+# sqlite3 is included with Python standard library
+
+# Excel File Reading
+openpyxl>=3.0.0
+
+# Jupyter Notebook (for interactive analysis)
+jupyter>=1.0.0
+notebook>=6.5.0
+ipykernel>=6.20.0
+
+# Additional Utilities
+nbformat>=5.7.0  # For notebook handling

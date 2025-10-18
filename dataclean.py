@@ -20,11 +20,21 @@ def add_databreach_data(filename):
        'breach_location_country', 'tags',
        ]
     df_databreach_clean = df_databreach[df_databreach.breach_type != 'UNKN']
-    df_databreach_clean = df_databreach_clean[cols_we_need]
+    df_databreach_clean = df_databreach_clean[cols_we_need].copy()
+    
+    # Convert date columns to datetime
+    date_columns = ['reported_date', 'breach_date', 'end_breach_date']
+    for col in date_columns:
+        df_databreach_clean[col] = pd.to_datetime(df_databreach_clean[col], errors='coerce')
+    
+    # Convert numeric columns
+    numeric_columns = ['total_affected', 'residents_affected']
+    for col in numeric_columns:
+        df_databreach_clean[col] = pd.to_numeric(df_databreach_clean[col], errors='coerce')
+    
     return df_databreach_clean
 
 def universal_clean():
-
     """
     Cleans multiple datasets and returns a dictionary of cleaned dataframes.
     """
@@ -34,4 +44,3 @@ def universal_clean():
         'databreach': df_databreach,
     }
     return full_dictionary_file
-

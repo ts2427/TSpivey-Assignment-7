@@ -64,7 +64,6 @@ Improved normalization and deduplication of organization names
 File: CIK_NAME_TICKER_EXCHANGE.csv
 Source: U.S. Securities and Exchange Commission (SEC)
 
-Official source: https://www.sec.gov/files/company_tickers.json
 Documentation: https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm
 
 Description: Official registry of all publicly traded companies registered with the SEC, including unique identifiers for regulatory filings.
@@ -96,18 +95,6 @@ Contains only public companies (private companies, nonprofits, government entiti
 Some breached organizations are subsidiaries - may not have independent tickers
 Company name variations may complicate matching
 Delisted companies remain in historical data but may not be current
-
-
-3. Company Ticker Matches
-File: company_tickers.csv
-Source: Manually created for this project
-Description: Custom mapping table linking normalized organization names from the Privacy Rights Clearinghouse breach data to stock ticker symbols from the SEC registry.
-Creation Method:
-
-Manual matching process using organization names
-Verification against SEC official company names
-yfinance API searches for ticker validation (if used)
-Cross-referencing multiple sources to confirm matches
 
 Coverage:
 
@@ -156,9 +143,6 @@ Data_Breach_Chronology.xlsx (74,797 raw records)
          ├─ Save to CSV (output/databreach.csv)
          └─ Load to SQLite (databreach.db → databreach table)
          ↓
-    Merge with company_tickers.csv
-         └─ Join on normalized_org_name
-         ↓
     Merge with CIK_NAME_TICKER_EXCHANGE.csv
          └─ Join on ticker
          ↓
@@ -202,12 +186,10 @@ Privacy Rights Clearinghouse. (2025). Data Breach Chronology
 (Version 2.1) [Database]. Retrieved from https://privacyrights.org
 SEC Data Citation:
 U.S. Securities and Exchange Commission. (2025). Company Tickers. 
-Retrieved [date] from https://www.sec.gov/files/company_tickers.json
 Licensing
 
 Data Breach Chronology: Subject to Privacy Rights Clearinghouse Terms of Service
 SEC Data: Public domain (U.S. government data)
-Project-specific files (company_tickers.csv): Created for research purposes
 
 
 Data Access and Availability
