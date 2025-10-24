@@ -2,7 +2,7 @@
 
 **Author:** T. Spivey  
 **Course:** BUS 761 - Business Analytics  
-**Institution:** University of West Florida  
+**Institution:** University of South Alabama  
 **Date:** October 2025
 
 ---
