@@ -1,0 +1,28 @@
+{
+  "model_name": "random_forest",
+  "accuracy": 0.7686546071226682,
+  "f1_score": 0.5248185776487664,
+  "features": [
+    "breach_year",
+    "breach_month",
+    "breach_quarter",
+    "breach_day_of_week",
+    "is_weekend",
+    "organization_type_BSO",
+    "organization_type_BSR",
+    "organization_type_EDU",
+    "organization_type_GOV",
+    "organization_type_MED",
+    "organization_type_NGO",
+    "organization_type_UNKN",
+    "breach_type_DISC",
+    "breach_type_HACK",
+    "breach_type_INSD",
+    "breach_type_PHYS",
+    "breach_type_PORT",
+    "breach_type_STAT"
+  ],
+  "training_samples": 28302,
+  "test_samples": 7076,
+  "saved_at": "2025-10-24T13:06:48.986273"
+}
