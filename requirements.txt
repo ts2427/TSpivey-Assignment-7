@@ -1,38 +1,47 @@
-# Assignment 6: Analytics Engine Requirements
+# Data Breach Analytics System - Complete Requirements
 # Python 3.8 or higher required
 
-# Core Data Analysis (from Assignment 5)
+# ==============================================================================
+# ASSIGNMENT 4: Database & ETL
+# ==============================================================================
 pandas>=1.5.0
+openpyxl>=3.0.0  # For Excel file reading
+
+# ==============================================================================
+# ASSIGNMENT 5: Exploratory Data Analysis
+# ==============================================================================
 numpy>=1.24.0
-
-# Machine Learning
-scikit-learn>=1.2.0
-
-# Statistical Analysis (from Assignment 5)
 scipy>=1.10.0
 statsmodels>=0.14.0
-
-# Data Visualization (from Assignment 5)
 matplotlib>=3.7.0
 seaborn>=0.12.0
 
-# Database (standard library - included with Python)
-# sqlite3
-
-# Jupyter Notebook
+# ==============================================================================
+# ASSIGNMENT 6: Machine Learning Models
+# ==============================================================================
+scikit-learn>=1.2.0
 jupyter>=1.0.0
 notebook>=6.5.0
 ipykernel>=6.20.0
 
-# Optional: Advanced ML
+# ==============================================================================
+# ASSIGNMENT 7: Dashboard & Deployment
+# ==============================================================================
+streamlit>=1.28.0
+plotly>=5.14.0
+
+# ==============================================================================
+# OPTIONAL: Advanced Features
+# ==============================================================================
+# Advanced ML
 # xgboost>=1.7.0
 # lightgbm>=3.3.0
 
-# Optional: Model Explainability
+# Model Explainability
 # shap>=0.42.0
 # lime>=0.2.0
 
-# Optional: Production Deployment
+# Production API
 # flask>=2.3.0
 # fastapi>=0.100.0
 # pydantic>=2.0.0
