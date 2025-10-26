@@ -1,7 +1,7 @@
 # Data Breach Analytics System
 
 **Author:** T. Spivey  
-**Course:** BUS 761 - Business Analytics  
+**Course:** BUS 751 - Python for Business Analytics
 **Institution:** University of South Alabama  
 **Date:** October 2025
 
@@ -623,7 +623,7 @@ Verify container health: `docker ps`
 
 ## 🤝 Contributing
 
-This is an academic project for BUS 761. While not open for external contributions, the code demonstrates best practices for:
+This is an academic project for BUS 751. While not open for external contributions, the code demonstrates best practices for:
 
 - Data pipeline development
 - Statistical analysis workflows
@@ -636,7 +636,7 @@ This is an academic project for BUS 761. While not open for external contributio
 
 ## 📄 License
 
-This project is submitted as coursework for BUS 761 - Business Analytics at the University of West Florida.
+This project is submitted as coursework for BUS 751 - Python for Business Analytics.
 
 **Data Source:** Privacy Rights Clearinghouse - Data Breach Chronology v2.1  
 **License:** Educational use for academic purposes
@@ -646,9 +646,9 @@ This project is submitted as coursework for BUS 761 - Business Analytics at the 
 ## 👤 Author
 
 **T. Spivey**  
-Master's Student - Business Analytics  
-University of West Florida  
-Course: BUS 761  
+PhD Student - Business Analytics  
+University of South Alabama 
+Course: BUS 751 - Python for Business Analytics
 Semester: Fall 2025
 
 ---
@@ -656,9 +656,9 @@ Semester: Fall 2025
 ## 📞 Contact
 
 For questions about this project:
-- **Email:** [Your Email]
-- **GitHub:** [Your GitHub Profile]
-- **Course:** BUS 761 with [Professor Name]
+- **Email:** ts2427@jagmail.southalabama.edu
+- **GitHub:** https://github.com/ts2427
+- **Course:** BUS 751 - Python for Business Analytics with Joshua E. Lambert, PhD
 
 ---
 
